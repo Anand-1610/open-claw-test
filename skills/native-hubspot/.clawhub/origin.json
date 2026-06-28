@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "registry": "https://clawhub.ai",
+  "slug": "native-hubspot",
+  "installedVersion": "1.0.1",
+  "installedAt": 1782561004462,
+  "artifact": {
+    "kind": "archive",
+    "sha256": "1f791f004cbce26ef405d454c033acc7f07212c45e2ccbf2c258aa9e395bd5c9",
+    "integrity": "sha256-H3kfAEy84m70BdRUwDOsx/ByEsReLMvywliqnjlb1ck="
+  },
+  "skillFile": {
+    "path": "SKILL.md",
+    "sha256": "491b60b0e3d4cfbd5beed5e232e02016eedccd5034e61129856d55cf7c9a1e5e"
+  }
+}

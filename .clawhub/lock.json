@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "skills": {
+    "native-hubspot": {
+      "version": "1.0.1",
+      "installedAt": 1782561004462,
+      "registry": "https://clawhub.ai",
+      "artifact": {
+        "kind": "archive",
+        "sha256": "1f791f004cbce26ef405d454c033acc7f07212c45e2ccbf2c258aa9e395bd5c9",
+        "integrity": "sha256-H3kfAEy84m70BdRUwDOsx/ByEsReLMvywliqnjlb1ck="
+      },
+      "skillFile": {
+        "path": "SKILL.md",
+        "sha256": "491b60b0e3d4cfbd5beed5e232e02016eedccd5034e61129856d55cf7c9a1e5e"
+      },
+      "verification": {
+        "schema": "clawhub.skill.verify.v1",
+        "ok": true,
+        "decision": "pass",
+        "reasons": [],
+        "card": {
+          "available": true,
+          "path": "skill-card.md",
+          "url": "https://wry-manatee-359.convex.site/api/v1/skills/native-hubspot/card?ownerHandle=codeninja23&version=1.0.1",
+          "sha256": "bb2486dbe8b15545bdeaded56285a1b9a02c4335520ab2e6321b22368434c01e",
+          "size": 1808,
+          "contentType": "text/markdown; charset=utf-8"
+        },
+        "artifact": {
+          "sourceFingerprint": "a71ab46c6ce96d51c4c697e78a08c2dd4f7e9016b7217601b2a7909320b3b6df",
+          "bundleFingerprints": [
+            "9e988b7b572ae4ad3823bd1f1c05b25638fdfab5026aa50b715247c5828f9fc1"
+          ],
+          "files": [
+            {
+              "path": "README.md",
+              "size": 3117,
+              "sha256": "28e285b5895b37bb54d821fd89234b78d6fded088652eec18b5a9fd51d1af963",
+              "contentType": "text/markdown"
+            },
+            {
+              "path": "SKILL.md",
+              "size": 3350,
+              "sha256": "491b60b0e3d4cfbd5beed5e232e02016eedccd5034e61129856d55cf7c9a1e5e",
+              "contentType": "text/markdown"
+            },
+            {
+              "path": "scripts/hubspot_query.py",
+              "size": 11612,
+              "sha256": "6ebb3669c48479c8d361e62bf514b29722b78d6544b1f0047aafd4710a284596",
+              "contentType": "text/plain"
+            }
+          ]
+        },
+        "provenance": {
+          "source": "unavailable",
+          "reason": "No server-resolved GitHub import provenance is stored for this version."
+        },
+        "security": {
+          "status": "clean",
+          "passed": true,
+          "rawStatus": "clean",
+          "verdict": "benign",
+          "confidence": "high",
+          "summary": "This skill is a transparent HubSpot CRM integration that can read and change CRM records using the user's HubSpot token.",
+          "model": "gpt-5.5",
+          "checkedAt": 1779950253322,
+          "signals": {
+            "staticScan": {
+              "status": "clean",
+              "rawStatus": "clean",
+              "reasonCodes": [],
+              "summary": "No suspicious patterns detected.",
+              "engineVersion": "v2.4.5",
+              "checkedAt": 1777525332037
+            },
+            "virusTotal": {
+              "status": "clean",
+              "rawStatus": "clean",
+              "verdict": "benign",
+              "analysis": "Type: OpenClaw Skill\nName: native-hubspot\nVersion: 1.0.1\n\nThe skill bundle is benign. It provides a direct interface to the HubSpot CRM API, as clearly stated in `SKILL.md` and `README.md`. The `scripts/hubspot_query.py` script uses standard Python libraries (`urllib.request`, `json`, `os`) to interact solely with `https://api.hubapi.com`, authenticating via the `HUBSPOT_TOKEN` environment variable. There is no evidence of data exfiltration to unauthorized endpoints, malicious command execution (e.g., `curl|bash`, `eval`), persistence mechanisms, or prompt injection attempts against the AI agent. The broad read/write permissions requested are necessary for the skill's stated purpose of managing CRM data.",
+              "source": "palm",
+              "scanner": "code_insight",
+              "engineStats": {
+                "harmless": 0,
+                "malicious": 0,
+                "suspicious": 0,
+                "undetected": 66
+              },
+              "checkedAt": 1779166316323
+            },
+            "skillSpector": {
+              "status": "suspicious",
+              "rawStatus": "suspicious",
+              "score": 39,
+              "severity": "MEDIUM",
+              "recommendation": "CAUTION",
+              "issueCount": 3,
+              "scannerVersion": "2.0.0",
+              "summary": null,
+              "error": null,
+              "checkedAt": 1779950225882
+            },
+            "dependencyRegistry": null
+          }
+        },
+        "signature": {
+          "status": "unsigned"
+        }
+      }
+    },
+    "gh": {
+      "version": "0.1.0",
+      "installedAt": 1782563698094,
+      "registry": "https://clawhub.ai",
+      "artifact": {
+        "kind": "archive",
+        "sha256": "2f1f7c8735de7bc069474606e158b152b2341a562e1d33918014a71099e5b9be",
+        "integrity": "sha256-Lx98hzXee8BpR0YG4VixUrI0GlYuHTORgBSnEJnlub4="
+      },
+      "skillFile": {
+        "path": "SKILL.md",
+        "sha256": "2df4f422936768ee52841eb861d01fb281dcc2d270a5e7f017e5a205c347583e"
+      },
+      "verification": {
+        "schema": "clawhub.skill.verify.v1",
+        "ok": true,
+        "decision": "pass",
+        "reasons": [],
+        "card": {
+          "available": true,
+          "path": "skill-card.md",
+          "url": "https://wry-manatee-359.convex.site/api/v1/skills/gh/card?ownerHandle=trumppo&version=0.1.0",
+          "sha256": "33b12e93433694dec4977db26a5604fddfee2ad42a9f674ae60e3e4cd34c267b",
+          "size": 1880,
+          "contentType": "text/markdown; charset=utf-8"
+        },
+        "artifact": {
+          "sourceFingerprint": "cc19fc9ecf15d718747efe661abef38c286141035858bd4427bc6ffe0f8f69bb",
+          "bundleFingerprints": [
+            "47e6dd9681fbc56c9f84862732ec0db76681cd5fcd1e7b4479a4698855655620"
+          ],
+          "files": [
+            {
+              "path": "SKILL.md",
+              "size": 1633,
+              "sha256": "2df4f422936768ee52841eb861d01fb281dcc2d270a5e7f017e5a205c347583e",
+              "contentType": "text/markdown"
+            },
+            {
+              "path": "agents/openai.yaml",
+              "size": 197,
+              "sha256": "29789d92ebdecec8463f961f897e8896cbd07a1e3b35aab3d3b5437f30636af2",
+              "contentType": "text/yaml"
+            }
+          ]
+        },
+        "provenance": {
+          "source": "unavailable",
+          "reason": "No server-resolved GitHub import provenance is stored for this version."
+        },
+        "security": {
+          "status": "clean",
+          "passed": true,
+          "rawStatus": "clean",
+          "verdict": "benign",
+          "confidence": "high",
+          "summary": "This is a straightforward GitHub CLI helper skill with disclosed repository-management actions and no evidence of hidden code or persistence.",
+          "model": "gpt-5.5",
+          "checkedAt": 1779961028265,
+          "signals": {
+            "staticScan": {
+              "status": "clean",
+              "rawStatus": "clean",
+              "reasonCodes": [],
+              "summary": "No suspicious patterns detected.",
+              "engineVersion": "v2.4.5",
+              "checkedAt": 1777525046182
+            },
+            "virusTotal": {
+              "status": "clean",
+              "rawStatus": "clean",
+              "verdict": "benign",
+              "analysis": "Type: OpenClaw Skill\nName: gh\nVersion: 0.1.0\n\nThe skill bundle is benign. It provides standard commands for the GitHub CLI (`gh`) to manage repositories, issues, pull requests, and releases. The `SKILL.md` instructions are clear, align with the stated purpose, and include safety notes for the agent, such as confirming targets before destructive actions. There is no evidence of data exfiltration, malicious execution, persistence, prompt injection attempts to subvert the agent, or obfuscation across any of the files.",
+              "source": "palm",
+              "scanner": "code_insight",
+              "engineStats": {
+                "harmless": 0,
+                "malicious": 0,
+                "suspicious": 0,
+                "undetected": 66
+              },
+              "checkedAt": 1779162273869
+            },
+            "skillSpector": {
+              "status": "clean",
+              "rawStatus": "clean",
+              "score": 0,
+              "severity": "LOW",
+              "recommendation": "SAFE",
+              "issueCount": 0,
+              "scannerVersion": "2.0.0",
+              "summary": null,
+              "error": null,
+              "checkedAt": 1779960991899
+            },
+            "dependencyRegistry": null
+          }
+        },
+        "signature": {
+          "status": "unsigned"
+        }
+      }
+    }
+  }
+}
